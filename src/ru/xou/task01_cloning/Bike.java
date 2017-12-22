@@ -77,7 +77,7 @@ public class Bike implements Cloneable{
             return false;
         Bike other = (Bike) obj;
 
-        if ((this.w.d != other.w.d) || (this.wheelCount != other.wheelCount))
+        if ((this.wheelCount != other.wheelCount) ||!(this.w.equals(other.w)))
             return false;
         return true;
     }
